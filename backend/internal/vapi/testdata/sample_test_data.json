@@ -1,0 +1,33 @@
+{
+  "message": {
+    "type": "tool-calls",
+    "timestamp": 1681234567890,
+    "toolCallList": [
+      {
+        "id": "call-001",
+        "name": "search_knowledge",
+        "arguments": {
+          "query": "how to deploy auth service",
+          "top_k": 5
+        }
+      },
+      {
+        "id": "call-002",
+        "name": "create_jira_ticket",
+        "arguments": {
+          "summary": "fix login redirect bug",
+          "description": "users are redirected incorrectly after login",
+          "priority": "high"
+        }
+      }
+    ],
+    "call": {
+      "id": "call-12345",
+      "assistantOverrides": {
+        "variableValues": {
+          "userId": "demo-user"
+        }
+      }
+    }
+  }
+}
